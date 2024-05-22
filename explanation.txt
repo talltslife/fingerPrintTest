@@ -1,0 +1,19 @@
+I chose to do money/time to find what is the optimal transactions to process first.
+Then sort base on which transaction had the highest value of money/time which is also amount/latency
+
+I think this is the best because in theory if a billion dollar Australian transaction was to happen,
+it would not go through for 50ms time limit.
+
+I also changed the base prioritize function slightly to also include the api_latencies in the params of the function.
+I did this to optimize my code to only have slice made once and then reused each time the totalTime was changed.
+I hope it clear why I chose this optimization.
+
+The program will run and give you an explanation to the base question of
+Question: What is the max USD value that can be processed in 50ms, 60ms, 90ms, 1000ms?
+But I will answer it directly below as well. At least for my algorithm.
+
+50ms is $3637.98
+60ms is $4362.01
+90ms is $6870.48
+1000ms is $35289.20
+
